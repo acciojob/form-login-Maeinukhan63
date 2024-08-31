@@ -6,8 +6,8 @@ function getFormvalue(event) {
     const form = document.getElementById('form1');
 
     // Retrieve the values from the input fields
-    const firstName = form.elements['fname'].value;
-    const lastName = form.elements['lname'].value;
+    const firstName = form.elements['fname'].value.trim();
+    const lastName = form.elements['lname'].value.trim();
 
     // Combine first name and last name
     const fullName = `${firstName} ${lastName}`;
