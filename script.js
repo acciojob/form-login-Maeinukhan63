@@ -1,6 +1,8 @@
 function getFormvalue(event) {
-    // Prevent the default form submission
-    event.preventDefault();
+    // Ensure the event is passed and prevent default form submission
+    if (event) {
+        event.preventDefault();
+    }
 
     // Get the form element
     const form = document.getElementById('form1');
